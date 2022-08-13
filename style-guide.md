@@ -12,7 +12,7 @@ The designs were created to the following widths:
 ### Primary
 
 - Dark cyan: hsl(158, 36%, 37%) //green
-- Cream: hsl(30, 38%, 92%) //white
+- Cream: hsl(30, 38%, 92%)
 
 ### Neutral
 
