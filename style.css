@@ -28,19 +28,21 @@ body {
     display: flex;
 }
 
-.container img {
+.img {
+    background: url("./images/image-product-desktop.jpg") center/cover;
     border-radius: 10px 0 0 10px;
-    height: 450px;
     width: 50%;
 }
 
 .contain {
-    margin: 15px 30px 30px 30px;
+    width: 50%;
 }
 
 h1 {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
+    padding: 0px 30px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -49,6 +51,8 @@ h2 {
     letter-spacing: 3px;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
+    padding: 0px 30px;
+    margin-top: 30px;
 }
 
 p {
@@ -56,12 +60,14 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: hsl(228, 12%, 48%);
+    padding: 0px 30px;
 }
 
 .flexBox {
     display: flex;
     align-items: center;
     margin: 30px 0px;
+    padding: 0px 30px;
 }
 
 .prix {
@@ -77,11 +83,12 @@ p {
 }
 
 .btn {
+    margin: 0px 30px;
     background-color: hsl(158, 36%, 37%);
     color: white;
     border-radius: 10px;
     height: 50px;
-    width: 100%;
+    width: 80%;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -101,7 +108,48 @@ ion-icon {
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 375px) {
 
+    h1 {
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+
+    .flexBox {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+   .container {
+    width: 340px;
+    height: 600px;
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 40% 60%;
+     
+   }
+
+   .contain {
+    width: 100%;
+   }
+
+   .img {
+    background: url("./images/image-product-mobile.jpg") center/cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+   }
+
+
+}
 
 
 
